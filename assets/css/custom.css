@@ -20,3 +20,13 @@ html {
     font-family: "Montserrat";
     font-weight: 400;
 }
+
+.customEntitityLogo {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
