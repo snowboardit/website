@@ -67,6 +67,10 @@
   {{ $jsRTL := resources.Get "js/rtl.js" }}
   {{ $assets.Add "js" (slice $jsRTL) }}
   {{ end }}
+  {{ if .Site.Params.vanta | default false }}
+  {{ $jsVanta := resources.Get "js/vanta.js"}}
+  {{ $assets.Add "js" (slice $jsVanta) }}
+  {{ end }}
   {{ if $assets.Get "js" }}
   {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint
   "sha512" }}
@@ -145,5 +149,11 @@
   </script>
   {{ end }}
   {{ end }}
+
+  {{/* Three */}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  {{/* Vanta */}}
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+  <script src="/js/vanta.js"></script>
 
 </head>
