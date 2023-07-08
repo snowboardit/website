@@ -21,12 +21,11 @@ html {
     font-weight: 400;
 }
 
-.customEntitityLogo {
-    max-width: 75px;
-    max-height: 75px;
+td {
+    vertical-align: middle !important;
+    padding: 1rem 1rem !important;
 }
 
-td {
-    text-align: center;
-    vertical-align: middle;
+.w-full {
+    width: 100%;
 }
