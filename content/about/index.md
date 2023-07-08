@@ -18,4 +18,4 @@ showReadingTime: false
     With over three years of experience in software development, I am dedicated to creating intuitive and powerful web applications that solve real-world problems.
 </h3>
 
-> <h3 class="font-normal">Take a gander at my work <a href="/projects"><strong>here</strong></a>.</h3>
+> <h3 class="font-normal">Take a look at my <a href="/projects"><strong>work</strong></a> and <a href="/resume"><strong>experience</strong></a>.</h3>
