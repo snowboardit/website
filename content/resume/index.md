@@ -116,6 +116,13 @@ layoutBackgroundHeaderSpace: false
             <td>Webmaster</td>
             <td>April 2023 - Present</td>
         </tr>
+        <tr>
+            <td>
+                <a href="https://sparkibc.zone/" target="_blank">Spark IBC</a>
+            </td>
+            <td>Co-Founder</td>
+            <td>February 2022- Present</td>
+        </tr>
     </tbody>
 </table>
 
