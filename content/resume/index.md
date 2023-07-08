@@ -1,9 +1,9 @@
 ---
 title: "Resume"
-date: 2022-07-05T03:12:35-05:00
+date: 2023-07-06T01:13:20-04:00
 draft: false
 
-showDate : true
+showDate : false
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
@@ -18,16 +18,14 @@ showViews: true
 showLikes: false
 showAuthor: false
 layoutBackgroundHeaderSpace: false
-
 ---
 
 ## Experience
 
-<table>
+<table class="w-full">
     <thead>
         <tr>
             <th>Company</th>
-            <th>Link</th>
             <th>Role</th>
             <th>Dates</th>
             <th>Location</th>
@@ -35,18 +33,28 @@ layoutBackgroundHeaderSpace: false
     </thead>
     <tbody>
         <tr>
-            <td><img class="customEntitityLogo" src="defendify.png"/></td>
-            <td><a href="https://defendify.com/" target="_blank">Defendify</a></td>
+            <td>
+                <a href="https://defendify.com/" target="_blank">Defendify</a>
+            </td>
             <td>Software Engineer</td>
             <td>May 2023 - Present</td>
             <td>Portland, ME</td>
         </tr>
         <tr>
-            <td><img class="customEntitityLogo" src="/img/max_logo_initials.png"/></td>
-            <td><a href="/" target="_blank">Freelance</a></td>
+            <td>
+                <a href="/" target="_blank">Freelance</a>
+            </td>
             <td>Full Stack Blockchain Developer</td>
-            <td>May 2022 - Present</td>
+            <td>September 2022 - May 2023</td>
             <td>Portland, ME</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://datadefined.com/" target="_blank">Data Defined</a>
+            </td>
+            <td>Systems Engineer</td>
+            <td>May 2019 - September 2022</td>
+            <td>Brunswick, ME</td>
         </tr>
     </tbody>
 </table>
@@ -59,29 +67,54 @@ layoutBackgroundHeaderSpace: false
     <thead>
         <tr>
             <th>Institution</th>
-            <th>Link</th>
             <th>Certification</th>
             <th>Date</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><img class="customEntitityLogo" src="/img/max_logo_initials.png"/></td>
-            <td><a href="https://freecodecamp.org/" target="_blank">FreeCodeCamp.org</a></td>
+            <td>
+                <a href="https://www.freecodecamp.org/certification/snowboardit/back-end-development-and-apis" target="_blank">FreeCodeCamp.org</a>
+            </td>
             <td>Backend Development and APIs</td>
             <td>2023</td>
         </tr>
         <tr>
-            <td><img class="customEntitityLogo" src="/img/max_logo_initials.png"/></td>
-            <td><a href="https://freecodecamp.org/" target="_blank">FreeCodeCamp.org</a></td>
+            <td>
+                <a href="https://freecodecamp.org/certification/snowboardit/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp.org</a>
+            </td>
             <td>JavaScript Algorithms and Data Structures</td>
             <td>2023</td>
         </tr>
         <tr>
-            <td><img class="customEntitityLogo" src="/img/max_logo_initials.png"/></td>
-            <td><a href="https://udemy.com" target="_blank">Udemy</a></td>
+            <td>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-52cdd931-d49d-4bf9-a52f-285984a1ffbd.pdf" target="_blank">Udemy</a>
+            </td>
             <td>The Web Developer Bootcamp 2023 (Colt Steele)</td>
-            <td>2012</td>
+            <td>2023</td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+## Volunteer
+
+<table>
+    <thead>
+        <tr>
+            <th>Organization</th>
+            <th>Title</th>
+            <th>Dates</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
+            </td>
+            <td>Webmaster</td>
+            <td>April 2023 - Present</td>
         </tr>
     </tbody>
 </table>
