@@ -15,5 +15,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
             size: .5
         })
     }
+    window.removeEventListener('DOMContentLoaded', event);
 });
-window.removeEventListener('DOMContentLoaded')
