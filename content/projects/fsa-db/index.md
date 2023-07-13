@@ -18,7 +18,7 @@ Given that Franconia Soaring is a people-centric operation, the database's desig
 
 For simplicity, this diagram only highlights the person-centric relationships (which are very important). Please see the tables below for a more in-depth and accurate representation of the database structure and relationships.
 
-![FSA_DB_Schema.png](FSA_DB_Schema.png)
+![FSA_DB_Schema.png](FSA_DB_UML.png)
 
 ---
 
