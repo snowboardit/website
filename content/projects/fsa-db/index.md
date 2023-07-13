@@ -2,13 +2,20 @@
 title: 'Soaring Club Management Database'
 date: 2023-07-12T04:01:17Z
 draft: false
+showHero: true
+heroStyle: 'background'
+showTableOfContents: true
 ---
+
+## Source
+
+📦 View the source code on [GitHub](https://github.com/snowboardit/fsa-db/tree/master).
 
 ## Philosophy
 
-The **Franconia Soaring Database** serves as the backbone for the management and billing system of the Franconia Soaring club v2, aiming to replace the current Google Sheets solution with a more customizable and efficient system. While it also supports the Franconia Soaring Foundation (FSF), the database design is tailored to cater to the requirements and workflows of Franconia Soaring Association (FSA).
+The **Franconia Soaring Database** serves as the backbone for the management and billing system of the Franconia Soaring club, aiming to replace the current Google Sheets solution with a more customizable and efficient system. While it also supports the Franconia Soaring Foundation (FSF), the database design is tailored to cater to the requirements and workflows of Franconia Soaring Association (FSA).
 
-The table structure and relationships within the database are designed to be familiar to club members who are accustomed to using the existing Google Sheets system. To illustrate the design philosophy, let's consider an example we are familiar with: weekend sign-up. In this scenario, a **person** who is a member of the **club** can sign up for an **operation** scheduled for July 2nd, 2023. Additionally, a **person** who holds the **role** of Duty Officer can also sign up for the same **operation**. See the different parts come together and organize a weekend operation? (If not, take a look at the tables below)
+The table structure and relationships within the database are designed to be familiar to club members who are accustomed to using the existing Google Sheets system. To illustrate the design philosophy, let's consider an example we are familiar with: weekend sign-up. In this scenario, a `person` who is a member of the `club` can sign up for an `operation` scheduled for July 2nd, 2023. Additionally, a `person` who holds the `role` of Duty Officer can also sign up for the same `operation`. See the different parts come together and organize a weekend operation? (If not, take a look at the [diagram](#diagram) and [table breakdown](#tables) below)
 
 Given that Franconia Soaring is a people-centric operation, the database's design emphasizes the interconnectedness of individuals, their roles, and their participation in specific operations. By capturing these relationships, the database enables efficient tracking of member involvement and facilitates smooth coordination of club activities. This approach ensures that the database accommodates the unique requirements of the Franconia Soaring club, enhancing operational effectiveness and streamlining the billing process.
 
@@ -16,11 +23,11 @@ Given that Franconia Soaring is a people-centric operation, the database's desig
 
 ## Diagram
 
-For simplicity, this diagram only highlights the person-centric relationships (which are very important). Please see the tables below for a more in-depth and accurate representation of the database structure and relationships.
-
-> More details [here](https://drawsql.app/teams/maxs-team-18/diagrams/fsa-db).
-
 ![FSA_DB_Schema.png](FSA_DB_UML.png)
+
+> See all database details [here](https://drawsql.app/teams/maxs-team-18/diagrams/fsa-db).
+
+Please see the [tables](#tables) section below for a more in-depth and accurate representation of the database structure and relationships.
 
 ---
 
