@@ -72,9 +72,13 @@ The **billing** table tracks billing information for flights within the FSA. It 
 
 This makes up about half of the system to achieve a more efficient billing process. The other half I imagine to consist of two main parts:
 
-1. **UI**: When a new flight is entered through the UI, a row is automatically created in the billing table with a `pending` status.
-2. **Service**: A program that runs indefinitely checks every `x` minutes for flights with the `pending` status. If there are items that match that criteria, the program will gather data required to bill, then attempts to send that data to QuickBooks. To establish a connection to QuickBooks, use of an API and a service-specific key will be necessary.
+1. **UI**: When a new flight is entered through the UI, a row is automatically created in the billing table with a `pending` status. We can also achieve this with a database trigger.
 
+2. **Service**: A program runs indefinitely and checks the `bill` table every `x` minutes for flights with the `pending` status. If there are items that match that criteria, the program will gather data required to invoice the individual, then attempts to send that data to QuickBooks. If data is sent to QuickBooks successfully, the system then sets the bill status to `sent`.
+
+Defining a reasonable interval between each system check of the bill table for `pending` status records will be necessary, as this will allow a billing admin enough time to find and mark the bill as `cancelled`. In contrast, if the interval was, for example 1 minute, that would not allow the billing admin to mark the bill as `cancelled` prior to it being sent to QuickBooks.
+
+> **NOTE:** To establish a connection to QuickBooks, use of an API and a service-specific key will be required.
 
 `person_operations`
 
