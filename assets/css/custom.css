@@ -33,7 +33,7 @@ td {
 /* countdown styling */
 :root {
     --smaller: .75;
-  }
+}
 
 .container {
     color: #fbb816;
@@ -70,15 +70,15 @@ td {
 }
 
 @media all and (max-width: 768px) {
-    .chs-headline {
-        font-size: calc(1.5rem * var(--smaller));
+    #chs-headline {
+        font-size: 1.5rem;
     }
 
     .chs-li {
-        font-size: calc(1.125rem * var(--smaller));
+        font-size: 1.125rem;
     }
 
     .chs-li span {
-        font-size: calc(3.375rem * var(--smaller));
+        font-size: 3.375rem;
     }
 }
