@@ -6,6 +6,7 @@ showAuthor: false
 showDate: false
 showWordCount: false
 showReadingTime: false
+showPagination: false
 ---
 
 <div class="container">
