@@ -37,7 +37,7 @@ td {
 
 .container {
     color: #fbb816;
-    margin: 10rem auto 0;
+    margin: auto 0;
     text-align: center;
 }
 
@@ -76,7 +76,6 @@ td {
     }
 
     .container {
-        text-align: left;
         margin: 3rem auto 0;
     }
 
@@ -85,10 +84,10 @@ td {
     }
 
     .chs-li {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .chs-li span {
-        font-size: 3.375rem;
+        font-size: 4rem;
     }
 }
