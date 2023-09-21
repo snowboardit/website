@@ -76,7 +76,7 @@ td {
     }
 
     .container {
-        margin: 3rem auto 0;
+        margin: auto 0;
     }
 
     .chs-ul {
@@ -84,10 +84,10 @@ td {
     }
 
     .chs-li {
-        font-size: 1rem;
+        font-size: .85rem;
     }
 
     .chs-li span {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
