@@ -29,3 +29,56 @@ td {
 .w-full {
     width: 100%;
 }
+
+/* countdown styling */
+:root {
+    --smaller: .75;
+  }
+
+.container {
+    color: #fbb816;
+    margin: 10rem auto 0;
+    text-align: center;
+}
+
+.chs-headline {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.chs-li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.chs-li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    .chs-headline {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    .chs-li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    .chs-li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
