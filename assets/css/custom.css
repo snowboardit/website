@@ -70,8 +70,18 @@ td {
 }
 
 @media all and (max-width: 768px) {
+
     #chs-headline {
         font-size: 1.5rem;
+    }
+
+    .container {
+        text-align: left;
+        margin: 3rem auto 0;
+    }
+
+    .chs-ul {
+        padding-left: 0;
     }
 
     .chs-li {

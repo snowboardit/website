@@ -14,7 +14,7 @@ showPagination: false
         Charleston Chummin' Begins in...
     </h1>
     <div id="countdown">
-        <ul>
+        <ul class="chs-ul">
             <li class="chs-li">
                 <span id="days"></span>
                 days
