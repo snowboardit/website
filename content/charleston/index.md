@@ -40,3 +40,6 @@ showPagination: false
         <span>🏖️</span>
     </div>
 </div>
+
+<!-- Countdown Script -->
+<script src="/js/countdown.js"></script>
