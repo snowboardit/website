@@ -14,7 +14,7 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 showEdit: false
-showViews: true
+showViews: false
 showLikes: false
 showAuthor: false
 layoutBackgroundHeaderSpace: false
@@ -109,6 +109,13 @@ layoutBackgroundHeaderSpace: false
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>
+                <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
+            </td>
+            <td>Communications Committee Chair</td>
+            <td>October 2023 - Present</td>
+        </tr>
         <tr>
             <td>
                 <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
