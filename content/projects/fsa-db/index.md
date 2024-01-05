@@ -1,15 +1,13 @@
 ---
-title: 'Soaring Club Management Database'
+title: "Soaring Club Management Database"
 date: 2023-07-12T04:01:17Z
 draft: false
-showHero: true
-heroStyle: 'background'
 showTableOfContents: true
 ---
 
 ## Source
 
-📦 View the source code on [GitHub](https://github.com/snowboardit/fsa-db/tree/master).
+{{< github repo="snowboardit/fsa-db" >}}
 
 ## Philosophy
 
@@ -37,41 +35,33 @@ Please see the [tables](#tables) section below for a more in-depth and accurate 
 
 The **person** table represents individuals associated with the FSA or FSF. It serves as a central repository for storing information about Franconia Soaring members, pilots, passengers, and other personnel involved in the organizations activities.
 
-
 `flights`
 
-The **flights** table stores information related to flight records within the FSA. It captures details about individual flights and its model takes after the flight log that currently exists in Google Sheets. It will log FSA club flights, as well as rides and visiting clubs’ flights. 
-
+The **flights** table stores information related to flight records within the FSA. It captures details about individual flights and its model takes after the flight log that currently exists in Google Sheets. It will log FSA club flights, as well as rides and visiting clubs’ flights.
 
 `aircraft`
 
 The **aircraft** table in the FSA Database contains information related to the aircrafts utilized at Franconia airport. These can be aircraft owned by FSA, another **club** or a **person**.
 
-
 `members`
 
 The **members** table represents the membership information of individuals associated with the FSA or FSF. It stores details about club members, including their membership status, start and end dates, and other related information. Remember, not all **people** are **members**, but all **members** are **people.**
-
 
 `certifications`
 
 The **certifications** table contains information about certifications held by individuals associated with the FSA or FSF. In this model, ‘Certifications’ is used with broad meaning, representing many club-related certifications in addition to the aviation definition.
 
-
 `clubs`
 
 The **clubs** table stores information about the Franconia Soaring club, neighboring clubs such as Post Mills, GBSC, or any others.
 
-
 `roles`
 
-The **Roles** table represents the roles or positions that a **person** can hold within the FSA or FSF. Roles have the ability to be private, making it so a users roles can be displayed in a UI, yet hide sensitive roles like admin or billing admin to those who don’t need that information. 
-
+The **Roles** table represents the roles or positions that a **person** can hold within the FSA or FSF. Roles have the ability to be private, making it so a users roles can be displayed in a UI, yet hide sensitive roles like admin or billing admin to those who don’t need that information.
 
 `operations`
 
 The **operations** table records information about operations conducted by the FSA. Operations can have a date in the past, present, or future. An operation and its related members (flights, person_operations) are related by date. This is to paint a picture of who did what on a specific operating day or in a timeframe.
-
 
 `billing`
 
@@ -91,23 +81,18 @@ Defining a reasonable interval between each system check of the bill table for `
 
 The **person_operations** table represents the sign-up records of individuals for specific operations or days with soaring operations.
 
-
 `person_clubs`
 
 The **person_clubs** table establishes the relationship between individuals and the clubs they are affiliated with.
-
 
 `person_roles`
 
 The **person_roles** table establishes the relationship between individuals and the roles they hold within the FSA or FSF.
 
-
 `person_aircraft`
 
 The **person_aircraft** table establishes the relationship between individuals and the aircraft they are associated with.
 
-
 `club_aircraft`
 
 The **club_aircraft** table establishes the relationship between clubs and the aircraft they have access to or own.
-
