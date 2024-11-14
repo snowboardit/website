@@ -3,16 +3,16 @@ title: "Resume"
 date: 2023-07-06T01:13:20-04:00
 draft: false
 
-showDate : false
-showDateUpdated : false
-showHeadingAnchors : false
-showPagination : false
-showReadingTime : false
-showTableOfContents : true
-showTaxonomies : false 
-showWordCount : false
-showSummary : false
-sharingLinks : false
+showDate: false
+showDateUpdated: false
+showHeadingAnchors: false
+showPagination: false
+showReadingTime: false
+showTableOfContents: true
+showTaxonomies: false
+showWordCount: false
+showSummary: false
+sharingLinks: false
 showEdit: false
 showViews: false
 showLikes: false
@@ -128,7 +128,7 @@ layoutBackgroundHeaderSpace: false
                 <a href="https://sparkibc.zone/" target="_blank">Spark IBC</a>
             </td>
             <td>Co-Founder</td>
-            <td>February 2022- Present</td>
+            <td>February 2022 - Present</td>
         </tr>
     </tbody>
 </table>
