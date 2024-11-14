@@ -134,5 +134,3 @@ layoutBackgroundHeaderSpace: false
 </table>
 
 <br/>
-
-> See more of my accomplishments **[here](/projects)**

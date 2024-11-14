@@ -12,4 +12,4 @@ As a self-taught full stack web developer with a diverse background in IT and au
 
 Beyond coding, I'm actively involved in the aviation community. Since September 2023, I have been volunteering as a member of the board of directors for the [Franconia Soaring Foundation (FSF)](https://soarfranconia.org). As the chairman of the communications committee, one of my key projects was revamping the FSF website, enhancing our digital presence and outreach.
 
-> Want to learn more? Take a look at my [**projects**](/projects) and [**experience**](/resume).
+> Want to learn more? Check out my [**experience**](/resume).
