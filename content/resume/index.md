@@ -113,7 +113,7 @@ layoutBackgroundHeaderSpace: false
             <td>
                 <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
             </td>
-            <td>Communications Committee Chair</td>
+            <td>Volunteer/Board Member</td>
             <td>October 2023 - Present</td>
         </tr>
         <tr>
@@ -125,7 +125,7 @@ layoutBackgroundHeaderSpace: false
         </tr>
         <tr>
             <td>
-                <a href="https://sparkibc.zone/" target="_blank">Spark IBC</a>
+                <a href="#volunteer" target="_blank">Spark IBC</a>
             </td>
             <td>Co-Founder</td>
             <td>February 2022 - Present</td>
