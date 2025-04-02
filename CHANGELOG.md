@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.1.3] - 2025-04-02
+
+### Added
+
+- Add execute permissions for build and start scripts
+
+### Changed
+
+- Update README
+- Update avatar
+
 ## [v0.1.2] - 2025-04-02
 
 ### Added
