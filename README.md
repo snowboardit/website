@@ -21,11 +21,13 @@
 1. `git switch master` and `git pull` to ensure we are up-to-date
 2. Bump `VERSION` in conformance to [semver](https://semver.org/)
 3. Log changes in `CHANGELOG.md`
-4. Commit changes with the new verison like `git commit -m "v0.0.0"`
-5. Create a tag like `git tag -a v0.0.0 -m "v0.0.0"`
-6. Push to origin with `git push origin v0.0.0`
-7. Switch to `production` branch with `git switch production`
-8. Ensure `production` is up-to-date with `git pull`
-9. Merge `master` - into -> `production` with `git merge master`
-10. `git push` to finalize the merge
-11. Remember to `git switch master`!
+4. Commit changes with the new verison `git commit -m "v0.0.0"`
+5. Push commits to origin `git push`
+6. Create a tag `git tag -a v0.0.0 -m "v0.0.0"`
+7. Push tag to origin `git push origin v0.0.0`
+8. Switch to `production` branch `git switch production`
+9. Ensure `production` is up-to-date `git pull`
+10. Merge `master` into `production` with `git merge master`
+11. `git push` to finalize the merge
+12. Remember to `git switch master`!
+13. Wrap up the process by [making a new Github release](https://github.com/snowboardit/website/releases/new)
