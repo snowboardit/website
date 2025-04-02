@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+VERSION=v0.143.0
+
+# Install Hugo v0.118.2 (requires go1.23.x or later)
+go install "github.com/gohugoio/hugo@$VERSION"
+
+# Build `hugo`
+CGO_ENABLED=1 go install -tags extended "github.com/gohugoio/hugo@$VERSION"
+
+# Setup theme(s)
+git submodule update --init --recursive
