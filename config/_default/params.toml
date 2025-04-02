@@ -12,10 +12,13 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = false
 
-mainSections = ["posts", "projects"]
+replyByEmail = false
+
+# mainSections = ["posts", "projects"]
 # robots = ""
 
-disableImageOptimization = true
+disableImageOptimization = false
+disableTextInHeader = true
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
@@ -23,6 +26,10 @@ disableImageOptimization = true
 highlightCurrentMenuArea = true
 smartTOC = true
 # smartTOCHideUnfocusedChildren = true
+
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
@@ -40,7 +47,7 @@ smartTOC = true
   showRecent = false
   showRecentItems = 3
   showMoreLink = false
-  showMoreLinkDest = "/posts"
+  showMoreLinkDest = "/about"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
@@ -49,6 +56,7 @@ smartTOC = true
   showDate = true
   showViews = false
   showLikes = false
+
   showDateUpdated = false
   showAuthor = true
   showHero = false
@@ -70,9 +78,9 @@ smartTOC = true
   # relatedContentLimit = 3
   showTaxonomies = false
   showAuthorsBadges = false
-  showWordCount = true
-  showSummary = true
+  showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showZenMode = false
 
 [list]
   showHero = false
@@ -85,6 +93,7 @@ smartTOC = true
   showLikes = false
   showTableOfContents = false
   showCards = false
+  orderByWeight = false
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
@@ -127,6 +136,17 @@ smartTOC = true
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
 
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # scriptName = ""
+  # enableTrackEvent = true
+
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
+
 [buymeacoffee]
   # identifier = ""
   # globalWidget = true
@@ -139,3 +159,8 @@ smartTOC = true
   # bing = ""
   # pinterest = ""
   # yandex = ""
+  # fediverse = ""
+
+[rssnext]
+  # feedId = ""
+  # userId = ""
