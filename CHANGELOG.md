@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.1.5] - 2025-08-08
+
+### Fixed
+
+- Favicons not showing properly
+
+### Removed
+
+- Avatar image zoom
+
 ## [v0.1.4] - 2025-08-07
 
 ### Added
