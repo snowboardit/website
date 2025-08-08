@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.1.4] - 2025-08-07
+
+### Added
+
+- Additional release process instructions
+
+### Changed
+
+- About page bio content
+
 ## [v0.1.3] - 2025-04-02
 
 ### Added
