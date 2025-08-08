@@ -8,10 +8,12 @@ showWordCount: false
 showReadingTime: false
 ---
 
-I'm a software engineer and tech enthusiast based in Maine, where my wife, a data scientist, and I share a small rustic farm with our beloved greyhound, two curious cats, and a pair of horses. By day, you'll typically find me immersed in code, moving between programming languages and frameworks, crafting intuitive web applications, and tackling intriguing technical challenges at [Defendify](https://defendify.com).
+I’m a full-stack software engineer with a backend focus, based in Maine. I specialize in building high performance, secure, and scalable systems with Go, Node.js, and PostgreSQL, and have additional experience in Redis, Docker, NATS.io, and AWS.
 
-Life isn't only about technology for me - I deeply value balance and staying curious. There's always a new hobby to explore or an old passion to revisit. Recently, I rekindled my love for soccer after a decade away and discovered joy in woodworking; a custom bed for our greyhound is my latest creation.
+At [Defendify](https://defendify.com), I work across 25+ repositories - designing backend systems, improving performance, and enhancing user experiences. My projects range from refactoring customer-facing pages for faster load times to building authentication systems that strengthen security. I’ve also contributed to open-source tools like [slack-go/slack](https://github.com/slack-go/slack).
 
-I'm also passionate about aviation and volunteer with a non-profit aviation foundation, [Franconia Soaring Foundation](https://soarfranconia.org), helping others experience the thrill of flight. When stepping away from screens, I enjoy hands-on projects around our farm—whether that's setting up a new network in the barn or tending to the garden.
+With a background in IT and audio/video engineering, I bring a practical, results-driven approach to software development. I’m passionate about clean architecture, the Unix philosophy, and solving real-world problems through thoughtful, simple, and maintainable code.
+
+Outside of work, I serve as a board member and webmaster for the [Franconia Soaring Foundation](https://soarfranconia.org/), help others experience the thrill of flight, and spend time on our small farm in Maine with my wife, our greyhounds, cats, and horses. I love to tinker and get my hands dirty - whether it’s working on cars, ATVs, and mowers, woodworking, taking things apart and fixing them, or cultivating crops in our garden.
 
 > Want to learn more? Check out my [**experience**](/resume).
