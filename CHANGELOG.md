@@ -1,5 +1,12 @@
 # Changelog
 
+## [v0.1.6] - 2025-11-18
+
+### Removed
+
+- Redundant "volunteer" mention in Volunteer section of Resume page
+- Table of contents from Resume page
+
 ## [v0.1.5] - 2025-08-08
 
 ### Fixed
