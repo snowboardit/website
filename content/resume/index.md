@@ -8,7 +8,7 @@ showDateUpdated: false
 showHeadingAnchors: false
 showPagination: false
 showReadingTime: false
-showTableOfContents: true
+showTableOfContents: false
 showTaxonomies: false
 showWordCount: false
 showSummary: false
@@ -113,7 +113,7 @@ layoutBackgroundHeaderSpace: false
             <td>
                 <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
             </td>
-            <td>Volunteer/Board Member</td>
+            <td>Board Member</td>
             <td>October 2023 - Present</td>
         </tr>
         <tr>
