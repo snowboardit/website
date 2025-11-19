@@ -45,7 +45,7 @@ layoutBackgroundHeaderSpace: false
                 <a href="/" target="_blank">Freelance</a>
             </td>
             <td>Full Stack Blockchain Developer</td>
-            <td>September 2022 - May 2023</td>
+            <td>Sep 2022 - May 2023</td>
             <td>Portland, ME</td>
         </tr>
         <tr>
@@ -53,7 +53,7 @@ layoutBackgroundHeaderSpace: false
                 <a href="https://datadefined.com/" target="_blank">Data Defined</a>
             </td>
             <td>Systems Engineer</td>
-            <td>May 2019 - September 2022</td>
+            <td>May 2019 - Sep 2022</td>
             <td>Brunswick, ME</td>
         </tr>
     </tbody>
@@ -114,21 +114,21 @@ layoutBackgroundHeaderSpace: false
                 <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
             </td>
             <td>Board Member</td>
-            <td>October 2023 - Present</td>
+            <td>Oct 2023 - Present</td>
         </tr>
         <tr>
             <td>
                 <a href="https://soarfranconia.org/" target="_blank">Franconia Soaring Foundation</a>
             </td>
             <td>Webmaster</td>
-            <td>April 2023 - Present</td>
+            <td>Apr 2023 - Present</td>
         </tr>
         <tr>
             <td>
                 <a href="#volunteer" target="_blank">Spark IBC</a>
             </td>
             <td>Co-Founder</td>
-            <td>February 2022 - Present</td>
+            <td>Feb 2022 - Present</td>
         </tr>
     </tbody>
 </table>
