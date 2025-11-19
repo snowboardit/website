@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.7] - 2025-11-18
+
+### Changed
+
+- Dates to short format (e.g. `Feb`, `Mar`, `Apr`) in Resume page
+
 ## [v0.1.6] - 2025-11-18
 
 ### Removed
