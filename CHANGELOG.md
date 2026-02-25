@@ -1,5 +1,25 @@
 # Changelog
 
+## [v0.2.0] - 2026-02-25
+
+### Added
+
+- Dynamic taglines to hero
+- Page title
+
+### Changed
+
+- Default headline/tagline
+- `mailto` address in hero
+
+### Fixed
+
+- `apple-touch-icon` file resolution
+
+### Removed
+
+- Short bio
+
 ## [v0.1.7] - 2025-11-18
 
 ### Changed
