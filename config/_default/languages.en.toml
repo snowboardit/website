@@ -16,8 +16,8 @@ weight = 1
 [params.author]
   name = "Max Lareau"
   image = "img/max_square.png"
-  headline = "Building Through Creative Expression"
-  bio = "Building Through Creative Expression"
+  headline = "Reticulating splines..."
+  bio = ""
   links = [
     { github = "https://github.com/snowboardit" },
     { linkedin = "https://linkedin.com/in/maxlareau" },
