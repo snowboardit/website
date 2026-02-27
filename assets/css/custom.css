@@ -33,3 +33,14 @@ td {
     width: 100%;
 }
 
+/* 
+I hate this, but I don't have time to troubleshoot why Tailwind is not compiling correctly.
+
+Basically, some tailwind styles are not recognized on the `/resume` page, namely padding and margin.
+I've troubleshot down to compiling the styles manually, but it doesn't seem to make a difference
+and I don't have anymore time to roubleshoot this now, so here we are! This is slightly less
+worse than inline styles I suppose :).
+*/
+#resume-row {
+  margin: 1.5rem 0;
+}
