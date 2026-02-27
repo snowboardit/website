@@ -1,5 +1,19 @@
 # Changelog
 
+## [v0.2.1] - 2026-02-26
+
+### Changed
+
+- Resume layout to be much more readable (and mobile friendly)
+
+### Fixed
+
+- Limit `taglines.js` to run only on the index page
+
+### Removed
+
+- Cached images
+
 ## [v0.2.0] - 2026-02-25
 
 ### Added
