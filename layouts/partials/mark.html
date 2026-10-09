@@ -1,0 +1,4 @@
+{{- /* Inline brand mark. Arg: "m", "ml", or "max". Color = currentColor. */ -}}
+{{- with resources.Get (printf "img/mark-%s.svg" .) -}}
+{{- replace .Content "<svg " "<svg aria-hidden=\"true\" focusable=\"false\" " | safeHTML -}}
+{{- end -}}

@@ -1,3 +1,48 @@
-baseURL = 'https://maxlareau.com/'
-languageCode = 'en-us'
-title = 'Max Lareau'
+baseURL = "https://maxlareau.com/"
+languageCode = "en-us"
+title = "Max Lareau"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "rss"]
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[params]
+  description = "I build backend systems, fly gliders, and fix things on a small farm in Maine."
+  # Cloudflare Web Analytics. Paste the token from the Cloudflare dashboard to turn it on.
+  # Empty = no analytics script.
+  cloudflareAnalyticsToken = ""
+
+  # Homepage "Connect" links, in display order.
+  [[params.links]]
+    label = "LinkedIn"
+    url = "https://linkedin.com/in/maxlareau"
+  [[params.links]]
+    label = "Email"
+    url = "mailto:dev@maxlareau.com"
+  [[params.links]]
+    label = "GitHub"
+    url = "https://github.com/snowboardit"
+
+[menus]
+  # Nav order is fixed: About, then Experience.
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 10
+  [[menus.main]]
+    name = "Experience"
+    pageRef = "/experience"
+    weight = 20
+
+# Netlify sets COMMIT_REF at build time. Used by the footer nameplate.
+[security.funcs]
+  getenv = ["^HUGO_", "^CI$", "^COMMIT_REF$"]
+
+[module.hugoVersion]
+  extended = false
+  min = "0.143.0"

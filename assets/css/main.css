@@ -1,0 +1,517 @@
+/* maxlareau.com v1
+ * Brand spec: Max's vault, 3 Resources/personal-brand-system.md
+ * Dark default. Barlow only. Square corners. One orange accent per view.
+ */
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/fonts/BarlowCondensed-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  /* color */
+  --night: #161513;   /* background */
+  --chalk: #f0ede6;   /* text, mark: 15.6:1 */
+  --soft: #cdc9c1;    /* secondary text */
+  --muted: #9e9a92;   /* labels: 6.5:1 */
+  --rule: #464440;    /* row lines */
+  --orange: #ff4f00;  /* accent: 5.5:1 on night */
+  --ink: #141414;     /* text on orange: 5.6:1 */
+
+  /* space, 4px base */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+
+  --wrap: 760px;
+  --measure: 560px;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--night);
+  color: var(--chalk);
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--rule) var(--night);
+}
+
+body {
+  margin: 0;
+  font: 500 18px/1.5 "Barlow", system-ui, sans-serif;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+a {
+  color: inherit;
+}
+
+/* Text links: orange underline that rises into a fill on hover, focus, and tap.
+   A background gradient (not a pseudo-element) so links that wrap still work. */
+.prose a,
+.experience-row a,
+.nameplate a,
+.links a {
+  color: var(--chalk);
+  text-decoration: none;
+  background-image: linear-gradient(var(--orange), var(--orange));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  padding-bottom: 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    background-size 180ms ease-out,
+    color 180ms ease-out;
+}
+.prose a:hover,
+.prose a:focus-visible,
+.prose a:active,
+.experience-row a:hover,
+.experience-row a:focus-visible,
+.experience-row a:active,
+.nameplate a:hover,
+.nameplate a:focus-visible,
+.nameplate a:active,
+.links a:hover,
+.links a:focus-visible,
+.links a:active {
+  color: var(--ink);
+  background-size: 100% 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* Data-plate label: condensed, uppercase, tracked. Brand grammar. */
+.label {
+  font: 600 15px/1.2 "Barlow Condensed", system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.skip {
+  position: absolute;
+  left: var(--s4);
+  top: -100px;
+  z-index: 10;
+  background: var(--orange);
+  color: var(--ink);
+  padding: var(--s2) var(--s3);
+  text-decoration: none;
+}
+.skip:focus-visible {
+  top: var(--s4);
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 var(--s5);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: var(--s7) 0 var(--s6);
+}
+
+/* Background: ASCII thermals on a canvas, plus a warm glow at the bottom
+   blended with overlay. Fixed behind everything. Decorative only. */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--night); /* overlay needs a dark backdrop, not transparent */
+  pointer-events: none;
+}
+.bg__field {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 55% at 50% 100%, rgb(255 79 0 / 0.55), transparent 70%);
+  mix-blend-mode: overlay;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  min-height: 72px;
+  border-bottom: 2px solid var(--chalk);
+}
+.home {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--chalk);
+}
+.home svg {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+.site-header ul {
+  display: flex;
+  gap: var(--s5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--chalk);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 150ms ease-out;
+}
+.site-header nav a:hover {
+  color: var(--orange);
+}
+.site-header nav a[aria-current="page"] {
+  border-bottom-color: var(--chalk);
+}
+
+/* Type */
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0 0 var(--s4);
+  text-wrap: balance;
+}
+.lede {
+  max-width: 34ch;
+  margin: 0 0 var(--s7);
+  color: var(--soft);
+  text-wrap: pretty;
+}
+/* Card handoff welcome. Shown by site.js on /?hi. */
+.hello {
+  margin: calc(-1 * var(--s5)) 0 var(--s3);
+  font-weight: 600;
+  color: var(--chalk);
+}
+
+/* Phones: push the welcome line + links to the bottom of the screen, just
+   above the footer, so they sit under the thumb. margin-top: auto only takes
+   free space, so on short screens they flow right after the bio. */
+@media (max-width: 719px) {
+  main:has(.connect) {
+    display: flex;
+    flex-direction: column;
+  }
+  .connect {
+    margin-top: auto;
+  }
+  .connect .hello {
+    margin-top: 0;
+  }
+  .lede {
+    margin-bottom: var(--s6);
+  }
+}
+
+/* Plate: ruled box with a label head and rows */
+.plate {
+  max-width: var(--measure);
+  border: 2px solid var(--chalk);
+  margin: 0 0 var(--s6);
+  background: var(--night); /* solid plate over the background field */
+}
+.plate__head {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  border-bottom: 2px solid var(--chalk);
+}
+.plate__rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plate__rows > li + li {
+  border-top: 1px solid var(--rule);
+}
+
+/* Link line (home, 404): plain links in a row, site underline style. */
+.links a {
+  /* 44px tap target; the underline stays on the text (content-box). */
+  display: inline-block;
+  padding: 10px 0;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--s5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Experience plates */
+.experience-cols {
+  display: none;
+}
+.experience-row {
+  display: grid;
+  gap: var(--s1);
+  padding: var(--s4);
+}
+.experience-title {
+  font-weight: 600;
+  margin-bottom: var(--s1);
+}
+.experience-field {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: var(--s3);
+  align-items: baseline;
+}
+.experience-field .label {
+  color: var(--muted);
+}
+
+@media (min-width: 720px) {
+  .plate:has(.experience-row) {
+    max-width: none;
+  }
+  .experience-cols,
+  .experience-row {
+    display: grid;
+    gap: var(--s4);
+    align-items: baseline;
+    padding: var(--s3) var(--s4);
+  }
+  .experience-cols {
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+  }
+  /* Fixed widths for dates and location so the head row and data rows align. */
+  .experience-cols--4 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) 168px 128px;
+  }
+  .experience-cols--3 {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 168px;
+  }
+  .experience-row .nums,
+  .experience-cols--4 > .experience-field:last-child {
+    white-space: nowrap;
+  }
+  .experience-row {
+    padding-block: var(--s4);
+  }
+  .experience-title {
+    margin: 0;
+  }
+  .experience-field {
+    display: block;
+  }
+  /* Column head carries the labels on wide screens. Keep them for screen readers. */
+  .experience-field .label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Long-form pages (About) */
+/* Intro: avatar + spec plate. Stacked on phones, side by side above 720px. */
+.intro {
+  display: grid;
+  gap: var(--s5);
+  margin: 0 0 var(--s6);
+}
+.avatar {
+  display: block;
+  width: 240px;
+  height: 240px;
+  border: 2px solid var(--chalk);
+}
+.spec {
+  margin: 0;
+  align-self: start;
+}
+.spec__row {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: var(--s3);
+  align-items: baseline;
+  padding: var(--s3) var(--s4);
+}
+.spec__row + .spec__row {
+  border-top: 1px solid var(--rule);
+}
+.spec dt {
+  color: var(--muted);
+}
+.spec dd {
+  margin: 0;
+}
+@media (min-width: 720px) {
+  .intro {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+  .spec {
+    max-width: none;
+  }
+}
+.prose {
+  max-width: 68ch;
+  color: var(--soft);
+}
+.prose p {
+  margin: 0 0 var(--s5);
+}
+.prose strong {
+  color: var(--chalk);
+  font-weight: 600;
+}
+.prose a strong {
+  color: inherit;
+}
+.prose blockquote {
+  margin: var(--s6) 0 0;
+  padding: var(--s3) var(--s4);
+  border-left: 2px solid var(--chalk);
+  color: var(--chalk);
+}
+.prose blockquote p {
+  margin: 0;
+}
+
+/* Footer */
+.site-footer {
+  /* Transparent over the background field. Text is Soft, not Muted:
+     worst measured case is 7.6:1 (Muted would be 4.5:1). Plates stay solid. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s2) var(--s4);
+  padding: var(--s4) 0 var(--s6);
+  border-top: 1px solid var(--rule);
+  color: var(--soft);
+  font-size: 15px;
+}
+
+/* Nameplate: real build data in a ruled strip. Rules come from the 1px gap
+   showing the rule color behind the cells. */
+.nameplate {
+  display: inline-grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1px;
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--rule);
+  font-size: 13px;
+}
+.nameplate > div {
+  display: flex;
+  gap: var(--s2);
+  padding: var(--s1) var(--s3);
+  background: var(--night);
+}
+.nameplate dt {
+  color: var(--muted);
+}
+.nameplate dd {
+  margin: 0;
+  color: var(--soft);
+  text-transform: none;
+}
+.nameplate a {
+  /* Grow the tap area to about 44px without changing the plate height.
+     The underline stays on the text (content-box). */
+  display: inline-block;
+  padding: 14px 8px;
+  margin: -14px -8px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+
+.bg-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--soft);
+  font: 15px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: pre;
+  cursor: pointer;
+  transition: color 150ms ease-out;
+}
+.bg-toggle[hidden] {
+  display: none;
+}
+.bg-toggle:hover {
+  color: var(--chalk);
+}
+
+@media (max-width: 400px) {
+  .wrap {
+    padding: 0 var(--s4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

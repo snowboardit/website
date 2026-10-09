@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>Page not found</h1>
+<p class="lede">This page does not exist. It may have moved in the redesign.</p>
+<nav class="links" aria-label="Try">
+  <ul>
+    <li><a href="{{ "/" | relURL }}">Home</a></li>
+    <li><a href="{{ "/experience/" | relURL }}">Experience</a></li>
+    <li><a href="{{ "/about/" | relURL }}">About</a></li>
+  </ul>
+</nav>
+{{ end }}

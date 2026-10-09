@@ -1,0 +1,28 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{- range site.Data.experience }}
+{{- $cols := .columns }}
+{{- $id := .title | urlize }}
+<section class="plate" aria-labelledby="{{ $id }}">
+  <h2 id="{{ $id }}" class="plate__head label">{{ .title }}</h2>
+  <div class="experience-cols experience-cols--{{ len $cols }} label" aria-hidden="true">
+    {{- range $cols }}<span>{{ . }}</span>{{ end }}
+  </div>
+  <ul class="plate__rows">
+    {{- range .rows }}
+    <li class="experience-row experience-cols--{{ len $cols }}">
+      <span class="experience-title">{{ .title }}</span>
+      <span class="experience-field"><span class="label">{{ index $cols 1 }}</span>
+        {{- /* Span keeps the link inline, so a wrapped link gets one underline per line. */ -}}
+        {{- if .url }}<span><a href="{{ .url }}">{{ .org }}</a></span>{{ else }}<span>{{ .org }}</span>{{ end -}}
+      </span>
+      <span class="experience-field"><span class="label">{{ index $cols 2 }}</span><span class="nums">{{ .dates }}</span></span>
+      {{- if ge (len $cols) 4 }}
+      <span class="experience-field"><span class="label">{{ index $cols 3 }}</span><span>{{ .location }}</span></span>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{ end }}

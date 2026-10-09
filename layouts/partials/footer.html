@@ -1,0 +1,17 @@
+{{- $version := readFile "VERSION" | strings.TrimSpace -}}
+{{- $sha := getenv "COMMIT_REF" -}}
+<footer class="site-footer">
+  {{- /* Background switcher. Hidden until site.js runs (no JS = no background). */}}
+  <button type="button" class="bg-toggle" hidden aria-label="Change background"><span class="bg-toggle__icon" aria-hidden="true">/\/\</span></button>
+  {{- /* Nameplate: what is deployed. Netlify sets COMMIT_REF; local builds show "local". */}}
+  <dl class="nameplate label" aria-label="Build info">
+    <div><dt>Version</dt><dd class="nums">{{ $version }}</dd></div>
+    <div><dt>Commit</dt><dd class="nums" translate="no">
+      {{- with $sha -}}
+      <a href="https://github.com/snowboardit/website/commit/{{ . }}" aria-label="Commit {{ substr . 0 7 }} on GitHub">{{ substr . 0 7 }}</a>
+      {{- else -}}local{{- end -}}
+    </dd></div>
+  </dl>
+</footer>
+{{- $js := resources.Get "js/site.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

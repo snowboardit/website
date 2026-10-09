@@ -27,3 +27,9 @@ node_modules
 ._*
 .Spotlight-V100
 .Trashes
+
+# Hugo resource cache
+resources/_gen/
+
+# UI screenshots
+.ui-shots/

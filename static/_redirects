@@ -1,0 +1,9 @@
+# Netlify redirects. https://docs.netlify.com/routing/redirects/
+# Business card QR code target. Keep 302 (not 301) so the destination
+# can change later without reprinting cards. ?hi shows a one-time
+# welcome line (assets/js/site.js). Nothing is logged.
+/c    /?hi    302
+
+# v1 renamed Resume to Experience. Keep old links (LinkedIn, etc.) working.
+/resume     /experience/    301
+/resume/*   /experience/    301

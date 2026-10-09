@@ -1,0 +1,55 @@
+# Experience page, rendered as data plates by layouts/_default/experience.html.
+# Each section: title, columns (labels, in display order), rows.
+# Row keys: title (first column), org, url (optional link for org), dates, location.
+- title: Work
+  columns: [Role, Company, Dates, Location]
+  rows:
+    - title: Software Engineer
+      org: Defendify
+      url: https://defendify.com/
+      dates: May 2023 – Present
+      location: Portland, ME
+    - title: Full Stack Blockchain Developer
+      org: Freelance
+      dates: Sep 2022 – May 2023
+      location: Portland, ME
+    - title: Systems Engineer
+      org: Data Defined
+      url: https://datadefined.com/
+      dates: May 2019 – Sep 2022
+      location: Brunswick, ME
+
+- title: Certifications
+  columns: [Certification, Institution, Date]
+  rows:
+    - title: Backend Development and APIs
+      org: freeCodeCamp
+      url: https://www.freecodecamp.org/certification/snowboardit/back-end-development-and-apis
+      dates: "2023"
+    - title: JavaScript Algorithms and Data Structures
+      org: freeCodeCamp
+      url: https://freecodecamp.org/certification/snowboardit/javascript-algorithms-and-data-structures
+      dates: "2023"
+    - title: The Web Developer Bootcamp 2023
+      org: Udemy
+      url: https://udemy-certificate.s3.amazonaws.com/pdf/UC-52cdd931-d49d-4bf9-a52f-285984a1ffbd.pdf
+      dates: "2023"
+
+- title: Volunteer
+  columns: [Title, Organization, Dates]
+  rows:
+    - title: Board Member
+      org: Franconia Soaring Foundation
+      url: https://soarfranconia.org/
+      dates: Oct 2023 – Present
+    - title: Webmaster
+      org: Franconia Soaring Foundation
+      url: https://soarfranconia.org/
+      dates: Apr 2023 – Present
+    - title: Co-Lead, Training & Ops Center Working Group
+      org: Franconia Soaring Foundation
+      url: https://soarfranconia.org/
+      dates: Jun 2024 – May 2025
+    - title: Co-Founder
+      org: Spark IBC
+      dates: Feb 2022 – Present

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 translate="no">{{ site.Title }}</h1>
+<p class="lede">{{ site.Params.description }}</p>
+
+{{- /* Welcome line + links stay together. On phones the group sits at the
+       bottom of the screen, in thumb reach (see .connect in main.css). */}}
+<div class="connect">
+  {{- /* Shown by site.js only when someone arrives from the business card (/c → /?hi). */}}
+  <p class="hello" hidden>Good to meet you. Here’s where to find me.</p>
+  <nav class="links" aria-label="Connect">
+    <ul>
+      {{- range site.Params.links }}
+      <li><a href="{{ .url }}">{{ .label }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</div>
+{{ end }}

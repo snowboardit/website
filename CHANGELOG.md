@@ -1,5 +1,38 @@
 # Changelog
 
+## [v1.0.0] - Unreleased
+
+Breaking: new design and a custom theme. Blowfish is gone.
+
+### Added
+
+- Custom Hugo theme in the personal brand system: Barlow, international orange, data-plate layout, dark default
+- Vector brand marks (`assets/img/mark-*.svg`), built from the Air America font
+- Homepage "Connect" links: LinkedIn, Email, GitHub
+- `/c` redirect (302) for the business card QR code, with a one-time welcome line
+- Experience page (was Resume), as data (`data/experience.yaml`) rendered as data plates. `/resume` redirects (301) to `/experience/`.
+- Footer nameplate with version and a link to the deployed commit
+- Animated ASCII background with a warm overlay glow: topo, cumulus, radar, snow, and scope. A small animated ASCII button in the footer cycles them. Long-press jumps to "off", which pauses all motion. Still frame under reduced motion.
+- Orange underline that rises into a fill on hover, focus, and tap
+- Open Graph image and tags
+- Optional Cloudflare Web Analytics (`params.cloudflareAnalyticsToken`)
+- `DESIGN.md`
+
+### Changed
+
+- New favicons and app icons from the M mark
+- About page avatar framed in the new style. Avatar removed from the homepage.
+- Fonts: Montserrat replaced by Barlow (subset woff2)
+
+### Removed
+
+- Blowfish theme (git submodule) and Tailwind markup
+- Vanta.js background, three.js, Firebase, jQuery
+- Google Analytics
+- Site search, RSS, and JSON outputs
+- Rotating taglines, replaced by the background switcher
+- PNG logos and cached images in `resources/_gen`
+
 ## [v0.2.1] - 2026-02-26
 
 ### Changed
