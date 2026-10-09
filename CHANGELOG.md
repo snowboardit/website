@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.0] - Unreleased
+## [v1.0.0] - 2026-10-09
 
 Breaking: new design and a custom theme. Blowfish is gone.
 
